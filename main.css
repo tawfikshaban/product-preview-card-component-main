@@ -1,0 +1,154 @@
+ body {
+     padding: 0;
+     margin: 0;
+     /* font-family:"Montserrat",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ; */
+ }
+
+ #myVideo {
+     position: fixed;
+     right: 0%;
+     bottom: -38%;
+     min-width: 140vw;
+     min-height: 100vh;
+     z-index: -1;
+ }
+
+ main {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100vw;
+     height: 100vh;
+ }
+
+ .content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 700px;
+     overflow: hidden;
+     position: relative;
+     background-color: white;
+     color: black;
+     border-radius: 14px;
+
+     .image {
+         max-height: 420px;
+     }
+
+     img {
+         height: 100%;
+         max-width: 100%;
+     }
+ }
+
+
+ .right-side {
+     padding-left: 20px;
+     padding-right: 20px;
+     flex-basis: 80%;
+     margin-bottom: 45px;
+ }
+
+ .text {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+
+     span {
+         display: block;
+     }
+
+     h4 {
+         font-weight: normal;
+         color: hsl(228, 12%, 48%);
+     }
+
+     h2 {
+         margin: 0;
+         font-family: "Fraunces", sans-serif;
+     }
+
+     h1 {
+         margin: 0;
+     }
+ }
+
+ p {
+     color: hsl(228, 12%, 48%);
+ }
+
+ .main {
+     color: hsl(158, 36%, 37%);
+     font-size: 43px;
+     font-weight: bold;
+     display: inline-block;
+ }
+
+ .tany {
+     text-decoration: line-through;
+     font-size: 14px;
+ }
+
+ a {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     padding: 15px 10px;
+     margin-top: 20px;
+     color: white;
+     border-radius: 12px;
+     background-color: hsl(158, 36%, 37%);
+
+     text-decoration: none;
+ }
+
+ @media (max-width:768px) {
+     .content {
+         flex-wrap: wrap;
+         max-width: calc(100% - 50px);
+         right: -25px;
+         bottom: -25px;
+         position: relative;
+         max-height: calc(100% - 50px);
+     }
+
+     #myVideo {
+         right: -195%;
+         bottom: 0;
+     }
+
+     h2 {
+         margin-top: 0;
+         margin-bottom: 0;
+     }
+
+     h4 {
+         margin-top: 0;
+         margin-bottom: 0;
+     }
+
+     p {
+         margin-top: 0;
+         margin-bottom: 0;
+     }
+
+     .image {
+         max-height: 100%;
+         overflow: hidden;
+     }
+
+     img {
+         max-width: 100%;
+         max-height: 100%;
+
+     }
+ }
+
+ @media (min-width:1000px) {
+     main {
+         justify-content: right;
+     }
+
+ }
